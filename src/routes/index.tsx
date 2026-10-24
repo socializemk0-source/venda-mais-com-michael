@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import livro from "@/assets/livro.jpg";
 import diagnostico from "@/assets/diagnostico.png.asset.json";
-import michael from "@/assets/michael.jpg.asset.json";
+import michael from "@/assets/michael-lancamento.jpg.asset.json";
 import logo from "@/assets/logo-branco.png";
 
 export const Route = createFileRoute("/")({
@@ -66,7 +66,7 @@ function Index() {
 
       <section className="bg-card text-card-foreground">
         <div className="mx-auto grid max-w-5xl items-center gap-10 px-5 py-16 md:grid-cols-2">
-          <img src={michael.url} alt="Michael Almeida de terno azul-marinho, fotografado em estúdio" width={1280} height={1920} loading="lazy" className="aspect-[4/5] w-full rounded-sm object-cover object-top" />
+          <img src={michael.url} alt="Michael Almeida sentado à mesa, com dois exemplares do livro Vender é Minha Arte, no lançamento" width={978} height={772} loading="lazy" className="aspect-[4/3] w-full rounded-sm object-cover" />
           <div>
             <h2 className="text-4xl font-bold">Quem é Michael Almeida</h2>
             <p className="mt-4 text-lg">
