@@ -24,7 +24,7 @@ type Offer = {
 
 const offers: Offer[] = [
   { tag: "Livro", title: "Vender é Minha Arte", text: "Obra com 27 capítulos de especialistas em vendas. No capítulo 20, eu ensino o SPIN Selling para vender no B2B.", cta: "Conhecer o livro", href: "#", img: livro, dark: true },
-  { tag: "Diagnóstico", title: "Os 7 Códigos da Venda", text: "Um guia de 7 dias para descobrir qual etapa do seu processo comercial está travando os seus resultados.", cta: "Conhecer o diagnóstico", href: "#", img: diagnostico.url, dark: false },
+  { tag: "Diagnóstico", title: "Os 7 Códigos da Venda", text: "Um guia de 7 dias para descobrir qual etapa do seu processo comercial está travando os seus resultados.", cta: "Conhecer o diagnóstico", href: "https://pay.kiwify.com.br/q63a3Vu", img: diagnostico.url, dark: false },
 ];
 
 function Index() {
