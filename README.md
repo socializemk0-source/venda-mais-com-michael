@@ -1,14 +1,22 @@
-# Welcome to your Lovable project
+# Venda Mais Com Michael
+
+https://claude.ai/artifact/9L4xKiiqiYX1vEab8sPw2e#no_universal_links
+
+
+
+Quero uma dessa igual
 
 This project was built with [Lovable](https://lovable.dev).
 
+**Live app**: https://venda-mais-com-michael.lovable.app
+
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/28f4a28d-4401-4e27-abf5-cc29bbf1a6a0).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +28,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
