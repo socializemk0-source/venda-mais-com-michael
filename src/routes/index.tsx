@@ -1,7 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import livro from "@/assets/livro.jpg";
-import diagnostico from "@/assets/diagnostico.jpg";
-import michael from "@/assets/michael.jpg";
+import diagnostico from "@/assets/diagnostico.png.asset.json";
+import michael from "@/assets/michael.jpg.asset.json";
+import logo from "@/assets/logo-branco.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -23,7 +24,7 @@ type Offer = {
 
 const offers: Offer[] = [
   { tag: "Livro", title: "Vender é Minha Arte", text: "Obra com 27 capítulos de especialistas em vendas. No capítulo 20, eu ensino o SPIN Selling para vender no B2B.", cta: "Conhecer o livro", href: "#", img: livro, dark: true },
-  { tag: "Diagnóstico", title: "Os 7 Códigos da Venda", text: "Um guia de 7 dias para descobrir qual etapa do seu processo comercial está travando os seus resultados.", cta: "Conhecer o diagnóstico", href: "#", img: diagnostico, dark: false },
+  { tag: "Diagnóstico", title: "Os 7 Códigos da Venda", text: "Um guia de 7 dias para descobrir qual etapa do seu processo comercial está travando os seus resultados.", cta: "Conhecer o diagnóstico", href: "https://pay.kiwify.com.br/q63a3Vu", img: diagnostico.url, dark: false },
 ];
 
 function Index() {
@@ -31,9 +32,9 @@ function Index() {
     <main>
       <section className="bg-grid bg-background text-foreground">
         <div className="mx-auto max-w-5xl px-5 pb-16 pt-6">
-          <header className="flex items-center justify-between">
-            <span className="font-display text-2xl font-bold">Michael Almeida</span>
-            <span className="text-sm text-muted-foreground">Treinamento de Vendas</span>
+          <header className="flex items-center justify-between gap-4">
+            <img src={logo} alt="Michael Almeida — Consultoria de Vendas" width={1320} height={708} className="h-14 w-auto md:h-16" />
+            <span className="hidden text-sm text-muted-foreground sm:block">Treinamento de Vendas</span>
           </header>
           <h1 className="mt-12 max-w-2xl text-5xl font-extrabold leading-[0.95] md:text-7xl">
             Duas formas de vender mais. Escolha por onde começar.
@@ -65,7 +66,7 @@ function Index() {
 
       <section className="bg-card text-card-foreground">
         <div className="mx-auto grid max-w-5xl items-center gap-10 px-5 py-16 md:grid-cols-2">
-          <img src={michael} alt="Michael Almeida sentado à mesa, com dois exemplares do livro, no lançamento nacional" width={1024} height={768} loading="lazy" className="w-full rounded-sm object-cover" />
+          <img src={michael.url} alt="Michael Almeida de terno azul-marinho, fotografado em estúdio" width={1280} height={1920} loading="lazy" className="aspect-[4/5] w-full rounded-sm object-cover object-top" />
           <div>
             <h2 className="text-4xl font-bold">Quem é Michael Almeida</h2>
             <p className="mt-4 text-lg">
